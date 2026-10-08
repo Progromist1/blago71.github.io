@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ознакомление с пожертвованием</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            min-height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #0f0f14;
+            color: #ffffff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 60px 20px 80px;
+        }
+
+        /* Заголовок — та же тема, что и на главной */
+        .main-title {
+            font-size: 56px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-align: center;
+            background: linear-gradient(90deg, #ffb347, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 40px;
+        }
+
+        /* Текстовый блок */
+        .content {
+            max-width: 780px;
+            width: 100%;
+            background: #17171f;
+            border: 1px solid #26262f;
+            border-radius: 24px;
+            padding: 40px 36px;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #e6e6ef;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content .accent {
+            color: #3ddc84;
+            font-weight: 600;
+        }
+
+        .content .highlight {
+            background: linear-gradient(90deg, #ffb347, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        /* Кнопка — идентична кнопке с главной страницы */
+        .button-zone {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .donate-btn {
+            padding: 18px 48px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #0f0f14;
+            background: linear-gradient(90deg, #ffb347, #ff6b6b);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+            box-shadow: 0 8px 24px rgba(255, 107, 107, 0.35);
+        }
+
+        /* Наведение — зелёная подсветка, как на главной */
+        .donate-btn:hover {
+            transform: translateY(-4px);
+            background: linear-gradient(90deg, #3ddc84, #1faa59);
+            color: #ffffff;
+            box-shadow: 0 0 18px rgba(61, 220, 132, 0.8),
+                        0 0 40px rgba(61, 220, 132, 0.55),
+                        0 12px 32px rgba(31, 170, 89, 0.45);
+        }
+
+        .donate-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 0 12px rgba(61, 220, 132, 0.7);
+        }
+
+        max-width: 600px {
+            .main-title { font-size: 38px; }
+            .content { padding: 28px 22px; font-size: 16px; }
+            .donate-btn { padding: 16px 32px; font-size: 17px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="main-title">Ознакомление с пожертвованием</h1>
+
+    <div class="content">
+        <p>
+            Каждое пожертвование — это не просто перевод средств. Это
+            <span class="highlight">шаг к чужой спасённой жизни</span>, тёплый вечер
+            для ребёнка и надежда для тех, кто остался без поддержки.
+        </p>
+
+        <p>
+            <span class="accent">Все денежные средства без исключения направляются
+            на благотворительность и на поддержку детских домов.</span>
+            Ни одна копейка не остаётся в стороне: 100% суммы идут напрямую
+            на помощь тем, кто в ней нуждается больше всего.
+        </p>
+
+        <p>
+            Средства расходуются на питание, одежду, учебные материалы, медикаменты,
+            организацию досуга и развитие детей. Мы работаем открыто и прозрачно,
+            чтобы каждый жертвователь видел, куда приходит его добро.
+        </p>
+
+        <p>
+            Детский дом — это место, где дети ждут не жалости, а заботы.
+            Ваше участие даёт им не просто вещи, а чувство, что они не одни,
+            что о них помнят, что их будущее кому-то важно.
+        </p>
+
+        <p>
+            <span class="accent">🎗️ Спасибо за вашу доброту.</span>
+            Даже небольшое пожертвование меняет чью-то судьбу — и это не громкие
+            слова, а реальность, которую вы создаёте своими руками.
+        </p>
+    </div>
+
+    <div class="button-zone">
+        <button class="donate-btn" onclick="goBack()">
+            ← Вернуться на главную
+        </button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+    </script>
+
+</body>
+</html>
